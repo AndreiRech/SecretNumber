@@ -25,6 +25,10 @@ h1 {
     font-size: 7rem;
 }
 
+h2 {
+    font-size: 5rem;
+}
+
 h3 {
     font-size: 3rem;
     margin-top: 20px;
@@ -41,4 +45,15 @@ h3 {
     font-size: 6rem;
     padding: 10px;
     margin: 20px;
+}
+
+.btn-jogar-novamente {
+    padding: 15px 80px;
+    border: 0;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-top: 50px;
+    font-family: var(--font);
+    font-size: 1.5rem;
+    color: var(--bg-color);
 }
