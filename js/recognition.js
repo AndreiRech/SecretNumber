@@ -1,10 +1,10 @@
-const elementoChute = document.getElementById('chute')
+const elementoChute = document.getElementById('chute');
+const botaoComeco = document.getElementById('comeco');
 
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
 recognition.lang = 'en-US';
-recognition.start();
 
 recognition.addEventListener('result', onSpeak);
 
@@ -21,5 +21,12 @@ function exibeChute(chute) {
         <span class="box">${chute}</span>
     `
 }
+
+document.body.addEventListener('click', e => {
+    if (e.target.id == 'comeco') {
+        recognition.start();
+        e.target.remove();
+    }
+})
 
 recognition.addEventListener('end', () => recognition.start());

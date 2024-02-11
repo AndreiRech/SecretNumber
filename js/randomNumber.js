@@ -1,5 +1,7 @@
 const menValor = 0;
 const maiValor = 100;
+const vidas = 6;
+let vidaAtual = vidas;
 const number = numberGenerator();
 
 const elementoMenValor = document.getElementById('menor-valor');

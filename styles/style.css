@@ -39,6 +39,11 @@ h3 {
     margin-top: 40px;
 }
 
+.vida {
+    font-size: 2rem;
+    margin-bottom: 70px;
+}
+
 .box {
     border: 4px solid var(--primary-color);
     display: inline-block;
@@ -55,5 +60,24 @@ h3 {
     margin-top: 50px;
     font-family: var(--font);
     font-size: 1.5rem;
+    color: black;
+}
+
+.botao-comeco {
+    padding: 15px 30px;
+    border: 0;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-top: 50px;
+    font-family: var(--font);
+    font-size: 5rem;
     color: var(--bg-color);
+}
+
+body.vitoria {
+    background-color: var(--secondary-color);
+}
+
+body.derrota {
+    background-color: var(--tertiary-color);
 }
